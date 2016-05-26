@@ -10,7 +10,7 @@ ENV SLIMERJS_VERSION_F 0.9.6
 RUN apt-get update && \
     apt-get install -y build-essential libssl-dev python-dev libffi-dev \
                        git wget xvfb libxrender-dev libasound2 libdbus-glib-1-2 \
-                       libgtk2.0-0 bzip2 && \
+                       libgtk2.0-0 bzip2 docker.io && \
     mkdir -p /srv/var && \
     wget -O /tmp/slimerjs-$SLIMERJS_VERSION_F-linux-x86_64.tar.bz2 http://download.slimerjs.org/releases/$SLIMERJS_VERSION_F/slimerjs-$SLIMERJS_VERSION_F-linux-x86_64.tar.bz2 && \
     tar -xjf /tmp/slimerjs-$SLIMERJS_VERSION_F-linux-x86_64.tar.bz2 -C /tmp && \
